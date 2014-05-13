@@ -12,10 +12,12 @@
         </script>
         <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.3/dojo/dojo.js"></script>
         <script>
-            
+            require(['app/MyWidget'], function (MyWidget) {
+                var w = new MyWidget(null, 'myWidgetDiv');
+            });
         </script>
     </head>
     <body>
-        
+        <div id="myWidgetDiv"></div>
     </body>
 </html>
