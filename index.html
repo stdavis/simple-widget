@@ -13,11 +13,13 @@
         <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.3/dojo/dojo.js"></script>
         <script>
             require(['app/MyWidget'], function (MyWidget) {
-                var w = new MyWidget(null, 'myWidgetDiv');
+                var w = new MyWidget({color: 'red'}, 'myWidgetDiv');
+                var y = new MyWidget({color: 'green'}, 'myWidgetDiv2');
             });
         </script>
     </head>
     <body>
         <div id="myWidgetDiv"></div>
+        <div id="myWidgetDiv2"></div>
     </body>
 </html>
