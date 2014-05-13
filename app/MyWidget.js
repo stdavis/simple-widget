@@ -12,11 +12,12 @@ define([
     ) {
     return declare([_WidgetBase, _TemplatedMixin], {
         templateString: template,
+        baseClass: 'my-widget',
 
         // color: String
         //      The name of the color of this widget
         color: null,
-        
+
         constructor: function () {
             console.log('app/MyWidget:constructor', arguments);
         }
